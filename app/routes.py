@@ -12,5 +12,5 @@ def send_request_data(route : str):
         "endpoint": route,
         "method": request.method
     }
-    requests.post(url="http://127.0.0.1:4001/api/traffic" ,json=request_data)
+    requests.post(url="http://127.0.0.1:4001/traffic" ,json=request_data)
     return jsonify(request_data)
